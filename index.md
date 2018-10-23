@@ -1,37 +1,239 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/minicursohtml/minicursohtml.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Dashboard Monitor | CSS Exercises</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Dashboard Monitor" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://ifpb.github.io/css-exercises/challenges/packages/bootstrap/dashboard-monitor/" />
+<meta property="og:url" content="https://ifpb.github.io/css-exercises/challenges/packages/bootstrap/dashboard-monitor/" />
+<meta property="og:site_name" content="CSS Exercises" />
+<script type="application/ld+json">
+{"headline":"Dashboard Monitor","@type":"WebPage","url":"https://ifpb.github.io/css-exercises/challenges/packages/bootstrap/dashboard-monitor/","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-### Markdown
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/css-exercises/assets/css/style.css?v=1125e23df9d5a3c587c84313305152fe528b6fb2">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">CSS Exercises</h1>
+      <h2 class="project-tagline"></h2>
+      
+      
+    </section>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <section class="main-content">
+      <h1 id="dashboard-monitor">Dashboard Monitor</h1>
 
-```markdown
-Syntax highlighted code block
+<h2 id="descrição">DESCRIÇÃO</h2>
+<hr />
 
-# Header 1
-## Header 2
-### Header 3
+<p>Na Internet é possível encontrar vários templates de Dashborad Amdin, como por exemplo o <a href="https://wrappixel.com/ampleadmin/">Ample Admin</a>, <a href="https://github.com/puikinsh/gentelella">Gentelella</a>, <a href="http://blacktie.co/2014/07/dashgum-free-dashboard/">DashGum Free Dashboard</a>, <a href="https://github.com/BlackrockDigital/startbootstrap-sb-admin-2">SB Admin</a>, <a href="https://adminlte.io">Admin Lite</a>, <a href="https://github.com/epicmaxco/vuestic-admin">Vuestic Admin</a>, <a href="https://github.com/rdash/rdash-angular">rdash</a>, <a href="https://github.com/misterGF/CoPilot">CoPilot</a>, <a href="https://modularcode.io/modular-admin-html/">modular-admin-html</a>, <a href="https://github.com/zuiidea/antd-admin">antd-admin</a>. A maioria desses templates estão disponíveis em galerias de template, ou até no próprio github.</p>
 
-- Bulleted
-- List
+<p>Pensando em propor uma nova proposta de tema, uma empresa decidiu utilizar o template <a href="https://tabler.github.io/tabler/">tabler</a> para um de seus sistemas, e está procurando profissionais com essa competência.</p>
 
-1. Numbered
-2. List
+<p>O Designer da empresa a princípio fez uma prosposta de layout para testar o template <a href="https://tabler.github.io/tabler/">tabler</a> presente na <em>Figura 1</em>.</p>
 
-**Bold** and _Italic_ and `Code` text
+<p><em>Figura 1 - Proposta de Template</em>
+<img src="/css-exercises/challenges/packages/bootstrap/dashboard-monitor/assets/layout.png" alt="Layout" /></p>
 
-[Link](url) and ![Image](src)
-```
+<p>A empresa até conseguiu iniciar o template, e os arquivos estão disponíveis em <a href="/css-exercises/challenges/packages/bootstrap/dashboard-monitor/code.zip">code.zip</a>. Contudo, ela está solicitando que os interessados a vaga enviem ao menos dois componentes do layout proposto para ajudar na seleção dessa vaga pretendida.</p>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<p>Detalhe, em <a href="/css-exercises/challenges/packages/bootstrap/dashboard-monitor/code.zip">code.zip</a> já existem algumas observações, mas que serão melhor descritos a seguir.</p>
 
-### Jekyll Themes
+<h2 id="componentes">COMPONENTES</h2>
+<hr />
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/minicursohtml/minicursohtml.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<p><strong>COMPONENTE 1 -</strong> Este componente está relacionado a primeira linha de <code class="highlighter-rouge">cards</code> do layout proposto, ou seja, especificamente se trata da seção da <em>Figura 2</em>.</p>
 
-### Support or Contact
+<p><em>Figura 2 - Componente 1</em><br />
+<img src="/css-exercises/challenges/packages/bootstrap/dashboard-monitor/assets/component1.png" alt="Layout" /></p>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<p>Então considere que:</p>
+
+<ul>
+  <li>O conteúdo seria esse:</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 
+  TODO Component 1 
+  
+  6% 43 New Tickets fa-chevron-up
+  -3% 17 Closed Today fa-chevron-down
+  9% 7 New Replies fa-chevron-up
+  3% 27.3K Followers fa-chevron-up
+  -2% $95 Daily Earnings fa-chevron-down
+  -1% 621 Products fa-chevron-down
+--&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>As cores utilizadas seriam:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#cd201f (.text-red)
+#5eba00 (.text-green)
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>A margem inferior dos <code class="highlighter-rouge">cards</code> seriam <code class="highlighter-rouge">1.5rem</code></p>
+  </li>
+  <li>
+    <p>Que a estrutura de cada <code class="highlighter-rouge">card</code> seja definida por:</p>
+  </li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3 text-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-right text-green"</span><span class="nt">&gt;</span>
+      6%
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-chevron-up"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h1 m-0"</span><span class="nt">&gt;</span>43<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-muted mb-4"</span><span class="nt">&gt;</span>New Tickets<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p><strong>COMPONENTE 2</strong> Este componente tem relação com a seção referente à <em>Figura 3</em>.</p>
+
+<p><em>Figura 3 - Componente 2</em><br />
+<img src="/css-exercises/challenges/packages/bootstrap/dashboard-monitor/assets/component2.png" alt="Layout" /></p>
+
+<p>Então considere que:</p>
+
+<ul>
+  <li>O conteúdo seria esse:</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 
+  TODO Component 2
+
+  Development Activity
+  User	            Commit	                  Date	
+  Ronald Bradley	  Initial commit	          May 6, 2018	
+  Beverly Armstrong	Left sidebar adjustments	April 15, 2018	
+  Bobby Knight	    Topbar dropdown style	    April 8, 2018	
+  Sharon Wells	    Fixes #625	              April 9, 2018	 
+--&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>As imagens da primeira coluna na tabela seriam essas:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>img/faces/male/9.jpg
+img/faces/female/1.jpg
+img/faces/male/4.jpg
+img/faces/female/11.jpg
+</code></pre></div></div>
+
+<ul>
+  <li>O ícone utilizado na última coluna seria esse:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fa fa-trash
+</code></pre></div></div>
+
+<p><strong>COMPONENTE 3</strong> Este componente tem relação com a seção referente à <em>Figura 4</em>.</p>
+
+<p><em>Figura 4 - Componente 3</em><br />
+<img src="/css-exercises/challenges/packages/bootstrap/dashboard-monitor/assets/component3.png" alt="Layout" /></p>
+
+<p>Então considere que:</p>
+
+<ul>
+  <li>O conteúdo seria esse:</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 
+  TODO Component 3
+  
+  New feedback 62
+  Today profit $652
+  New feedback 62
+  Today profit $652 
+--&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>A altura do <code class="highlighter-rouge">progress</code> seria de .5rem;</li>
+  <li>As cores de background seriam:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#cd201f (.bg-red)
+#5eba00 (.bg-green)
+</code></pre></div></div>
+
+<p><strong>COMPONENTE 4</strong> Este componente tem relação com a seção referente à <em>Figura 5</em>.</p>
+
+<p><em>Figura 5 - Componente 4</em><br />
+<img src="/css-exercises/challenges/packages/bootstrap/dashboard-monitor/assets/component4.png" alt="Layout" /></p>
+
+<p>Então considere que:</p>
+
+<ul>
+  <li>O conteúdo seria esse:</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 
+  TODO Component 4
+
+  132 Sales     12 waiting payments
+  78 Orders     32 shipped
+  1,352 Members 163 registered today
+  132 Comments  16 waiting 
+--&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Os ícones utilizados seriam:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fa fa-dollar
+fa fa-shopping-cart
+fa fa-users
+fa fa-envelope
+</code></pre></div></div>
+
+<ul>
+  <li>As cores de plano de fundo dos ícones seriam:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#cd201f (.bg-red)
+#5eba00 (.bg-green)
+#f1c40f (.bg-yellow)
+#467fcf (.bg-blue)
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong><a href="code-response/">Alternativa de resposta</a></strong></p>
+</blockquote>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-1523172-14', 'auto');
+        ga('send', 'pageview');
+      </script>
+    
+  </body>
+</html>
