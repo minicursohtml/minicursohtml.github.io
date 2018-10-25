@@ -1,5 +1,3 @@
 # minicurso html
 
 ## Dashboard
-
-processing
